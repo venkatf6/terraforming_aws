@@ -28,7 +28,7 @@ resource "aws_internet_gateway" "i_g_w" {
 resource "aws_instance"  "main" {
 ami = "ami-0c55b159cbfafe1f0"
 instance_type = "t2.micro"
-key_name = "awslabvenkat1"
+key_name = ""
 tags{
  Name = "first-intsance-using-TF"
 }
