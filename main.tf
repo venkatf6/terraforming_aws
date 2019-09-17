@@ -1,4 +1,4 @@
-:provider "aws" {
+provider "aws" {
  access_key = "${var.access_key}"
  secret_key = "${var.decret_key}"
  region = "us-east-2"
@@ -20,7 +20,7 @@ tags {
 }
 }
 resource "aws_subnet" "tata-subnet"{
- vpc_id = "${aws_vpc.TATA-vpc.id}
+ vpc_id = "${aws_vpc.TATA-vpc.id}"
  cidr_block = "10.50.1.0/24"
 tags{
  Name = "tata-subnet"
